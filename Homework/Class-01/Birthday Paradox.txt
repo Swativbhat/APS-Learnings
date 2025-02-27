@@ -1,0 +1,11 @@
+Birthday Paradox
+
+In a group of just 23 people there is a 50% chance that at least two of them share the same birthday.
+
+Why does the probability reach 50% with just 23 people?
+
+The probability reaches 50% with just 23 people because the number of possible birthday comparisons grows exponentially compared to the fixed number of 365 available birthdays. Instead of checking if one person has a specific birthday, we check if any two people share a birthday. The number of unique comparisons increases quadratically as more people are added.
+
+When a second person is added, the probability that they do not share a birthday with the first person is 364/365. Adding a third person means checking against the previous two, reducing the probability to 363/365. As more people are added, the chance that all have unique birthdays keeps decreasing.
+
+The number of unique birthday comparisons follows the formula n(n-1)/2. With 23 people, there are 253 comparisons, which is significantly more than the number of individuals themselves. This rapid increase in comparisons makes it highly likely that at least one pair will share a birthday, surpassing 50% probability even though there are 365 possible birthdays.

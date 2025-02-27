@@ -1,0 +1,30 @@
+Prompt-1: There is a bag with two hats red and blue everytime you pick a red hat you add another red hat back to the bag everytime you pick a blue hat you add another blue hat back to the bag run this iteration 100 times for every iteration print the hat selected, total number of hats in a bag and probability of selecting red and blue hats, 
+
+Prompt-2: There is a bag with two hats red and blue everytime you pick a red hat you add another blue hat back to the bag keep adding hats everytime you pick a blue hat you add another red hat back to the bag run this iteration 100 times for every iteration print the hat selected, total number of hats in a bag and probability of selecting red and blue hats,total hats shouldn't be 2 it should increase in each iteration.
+
+
+
+Prompt-1 Analysis 
+- You start with 1 Red Hat + 1 Blue Hat = 2 Hats 
+- If you pick Red, you add another Red → More Reds accumulate over time  
+- If you pick Blue, you add another Blue → More Blues accumulate over time  
+- Since both colors reinforce themselves, the probabilities fluctuate based on early draws, leading to a system with no stable ratio (highly dependent on the first few selections). This is similar to a random walk process where one color can dominate in the long run.  
+
+Prompt-2 Analysis 
+- You start with 1 Red Hat + 1 Blue Hat = 2 Hats  
+- If you pick Red, you add a Blue → Balances out the count  
+- If you pick Blue, you add a Red → Balances out the count  
+- The number of hats increases steadily, but the ratio remains close to 50-50 since every draw adds the opposite color, leading to a self-regulating system that stabilizes around an equal proportion of Red and Blue.  
+
+Why Prompt-1 Stabilizes Around 70-30 but Prompt-2 Around 50-50?
+
+1. Prompt-1 (Self-Reinforcing) 
+   - Early selections dictate long-term trends. If Red is picked more often early on, Reds dominate.  
+   - However, simulations show that on average, the ratio stabilizes around 70% for the more frequently drawn color (due to reinforcement) and 30% for the other.  
+
+2. Prompt-2 (Self-Balancing) 
+   - Every time you pick Red, you add a Blue, and vice versa.  
+   - This keeps the proportions close to 50-50 because neither color can permanently dominate.  
+
+Thus, Prompt-1 leads to self-reinforcement and uneven distributions (70-30), while Prompt-2 leads to equilibrium at 50-50.
+
